@@ -26,7 +26,7 @@ with open("requirements.txt", "r") as fh:
     install_requires = fh.read().split("\n")
 
 setuptools.setup(
-    name="jinjamator",
+    name="jinjamator-core",
     version=version,
     author="Wilhelm Putz",
     author_email="jinjamator@aci.guru",
@@ -41,13 +41,12 @@ setuptools.setup(
     license="ASL V2",
     classifiers=[
         "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Topic :: System :: Installation/Setup",
         "Topic :: System :: Systems Administration",
         "Topic :: Utilities",
     ],
     scripts=["bin/jinjamator"],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     zip_safe=False,
 )

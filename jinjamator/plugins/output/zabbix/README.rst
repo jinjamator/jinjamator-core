@@ -1,1 +1,0 @@
-Send data to Zabbix

@@ -1,1 +1,0 @@
-The excel output plugin creates a xlsx file for each tasklet return value.
