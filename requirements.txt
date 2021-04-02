@@ -1,18 +1,10 @@
 Jinja2
-ipcalc
-netmiko
-textfsm
 natsort
 xxhash
-xml2dict
-pika
 deepmerge
 flatten_json==0.1.7
-netaddr
 future
 pyflakes
-openpyxl
-ciscoconfparse
 xmltodict
 pyopenssl
 celery<5
@@ -21,7 +13,6 @@ json_log_formatter
 pyyaml
 jsonschema
 requests
-websocket-client
 flask
 flask-sqlalchemy
 python-magic
@@ -35,10 +26,3 @@ configargparse
 pyjwt
 httpx
 python-status
-setuptools-git-version
-docker
-deepdiff
-jsonpickle
-py-zabbix
-pyjq
-netaddr
