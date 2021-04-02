@@ -186,10 +186,14 @@ def initialize(flask_app, cfg):
         log.debug("WEBUI disabled")
     else:
         log.debug(f'using class {flask_app.config["JINJAMATOR_WEB_UI_CLASS"]} as webui')
-        webui_blueprint = importlib.import_module(
-            flask_app.config["JINJAMATOR_WEB_UI_CLASS"]
-        )
-        flask_app.register_blueprint(webui_blueprint.webui)
+        try:
+            classname = flask_app.config["JINJAMATOR_WEB_UI_CLASS"]
+            webui_blueprint = importlib.import_module(classname)
+            flask_app.register_blueprint(webui_blueprint.webui)
+        except ModuleNotFoundError:
+            log.error(
+                f"No module named '{classname}', did you install the jinjamator-daemon-webui package? -> WEBUI disabled"
+            )
 
 
 def run(cfg):
