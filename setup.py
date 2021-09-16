@@ -33,7 +33,7 @@ setuptools.setup(
     description="Boilerplate-free scripting and IT automation for python programmers",
     long_description=long_description,
     long_description_content_type="text/x-rst",
-    url="https://github.com/jinjamator/jinjamator",
+    url="https://github.com/jinjamator/jinjamator-core",
     packages=setuptools.find_packages(),
     include_package_data=True,
     package_data={"": ["*"]},
